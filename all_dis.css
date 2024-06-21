@@ -1,8 +1,16 @@
-/* first this css fils is not well formatted if some thing is not workig and i cant find the where i code that then i have
- write it in some where eles so code are everywere sorry for that  ill improve my skill soon as posible*/
-
-
-/*this will apply for for all website*/
+/*
+ * @file CSS Main File
+ * @author Asitha Kanchana (asitha.contact@gmail.com)
+ * @brief  first this css fils is not well formatted if some thing is not workig and i can't find the where i code that then i have
+ * write it in some where eles so code's are everywere sorry for that  i'll improve my skill soon as posible
+ * this will apply for all website
+ *   
+ * @version 1.0
+ * @date 2024-06-21
+ * 
+ * @copyright Copyright@ASI Solution (c) 2024
+ * 
+ */
 
 * {
     margin: 0;
@@ -11,7 +19,7 @@
 }
 
 
-/*//this will apply for for all website*/
+/*//this will apply for all website*/
 
 
 /* Home Page */

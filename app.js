@@ -1,3 +1,13 @@
+/*
+ * @file app.js
+ * @author Asitha Kanchana (asitha.contact@gmail.com)
+ * @brief  This File is for Comment section 
+ * @version 1.0
+ * @date 2024-06-21
+ * @copyright Copyright@ASI Solution (c) 2024
+ * 
+ */
+
 new Vue({
     el: '#app', // Targeting the element with id 'app' in the HTML
     data: {
