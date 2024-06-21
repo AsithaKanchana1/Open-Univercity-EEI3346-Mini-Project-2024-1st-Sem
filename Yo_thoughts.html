@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWave Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/all_dis.css">
+</head>
+
+<body>
+    <!-- navBar -->
+    <section class="Insights_header">
+        <nav class="nav">
+            <!--Navigation Bar-->
+            <a href="home.html"><img src="/img/logo_white.png" class="about_img" alt=""></a>
+            <div class="nav_link">
+                <ul class="in_link">
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/Insights.html">Insights</a></li>
+                    <li><a href="/Yo_thoughts.html">Your Thoughts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- // navBar -->
+    <div id="app">
+        <h1 class="com_forem">EcoWave Feedback</h1>
+        <div class="comment-form">
+            <textarea v-model="newComment" placeholder="Enter your feedback here"></textarea>
+            <button class="commentSec" @click="addComment">Add Comment</button>
+        </div>
+        <div class="comments-list">
+            <h2 class="com_forem2">Comments:</h2>
+            <ul>
+                <li v-for="comment in comments">{{ comment }}</li>
+            </ul>
+        </div>
+    </div>
+    <!-- //nav bar -->
+    <!-- js fils -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="app.js"></script>
+    <!-- //js fils -->
+</body>
+
+</html>

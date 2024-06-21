@@ -1,0 +1,582 @@
+/* first this css fils is not well formatted if some thing is not workig and i cant find the where i code that then i have
+ write it in some where eles so code are everywere sorry for that  ill improve my skill soon as posible*/
+
+
+/*this will apply for for all website*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*//this will apply for for all website*/
+
+
+/* Home Page */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/bg_1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* NavBar */
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* logo size update */
+
+nav img {
+    width: 150px;
+}
+
+.nav_link {
+    flex: 1;
+    text-align: right;
+}
+
+
+/* first navigation bar is created using list tag these codes will remove current styles and add new styls */
+
+.nav_link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+/* ancure tag style  */
+
+.nav_link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav_link ul li ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f73e31;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+/* hover effet for nav bar */
+
+.nav_link ul li :hover::after {
+    width: 100%;
+}
+
+
+/* //NavBar */
+
+.text_box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text_box h1 {
+    font-size: 62px;
+}
+
+.text_box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.home_btn1 {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.home_btn1:hover {
+    border: 1px solid #f73e31;
+    background: #f73e31;
+    transition: 1s;
+}
+
+
+/*EcoWave Insights*/
+
+.blog_link {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+/*Link To Blog Page and Comment Page*/
+
+.blog_col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.raw {
+    /*this is for aligning iterm to inline */
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog_col img {
+    width: 100%;
+    display: block;
+}
+
+
+/* fore home page */
+
+.in_btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ed5942e1;
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* home page */
+
+.in_btn:hover {
+    border: 1px solid#f80233;
+    background: rgba(95, 249, 246, 0.979);
+    transition: 1s;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+    border-color: aquamarine;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+/*footer common */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer p {
+    font-weight: 300;
+}
+
+.footer #Copyright {
+    color: #f73e31;
+}
+
+
+/* ================================================================== */
+
+
+/*-----------------------------About Page----------------------------*/
+
+
+/* ================================================================== */
+
+
+/* in about age i have change the baground so footer and nav bar baground need to be change codes are  below  */
+
+.about_img {
+    width: 100px;
+    height: 55px;
+}
+
+.nav_about {
+    background-color: #191919;
+    font-size: 30px;
+}
+
+.about-header {
+    color: none;
+}
+
+.about {
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+
+.about img {
+    height: auto;
+    width: 420px;
+}
+
+.about_text {
+    width: 550px;
+}
+
+
+/* for about,problem,solution pages */
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_text h1 {
+    color: #fff;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about_text h5 {
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.about_span {
+    color: #f9004d;
+}
+
+.about_student_span {
+    color: aquamarine;
+}
+
+.about_text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 45px;
+}
+
+.Wel_com {
+    color: bisque;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.name_p {
+    color: cyan;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 45px;
+    font-weight: 300;
+}
+
+
+/* --about_footer-- */
+
+.about_footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #191919;
+}
+
+.about_footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about_footer p {
+    font-weight: 300;
+    color: antiquewhite;
+}
+
+.about_footer #Copyright {
+    color: #f73e31;
+    font-style: italic;
+}
+
+
+/* //about_footer */
+
+
+/* About ,yo_thought page Button */
+
+button {
+    background: #f9004d;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+
+/* ==================================================================== */
+
+
+/* ------------------------------Insights------------------------------ */
+
+
+/* ==================================================================== */
+
+.in_link a {
+    /*this page dont need bg image so nav link colors need to be change  */
+    color: #191919;
+    font-weight: bolder;
+}
+
+#blog_post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blog_hedding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog_hedding span {
+    color: #f80233;
+    align-items: center;
+}
+
+.blog_hedding h1 {
+    align-items: center;
+    font-size: 30px;
+    color: #191919;
+    font-weight: 600;
+}
+
+.blog_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.blog_box {
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+
+.blog_img {
+    width: 100%;
+    height: auto;
+}
+
+.blog_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog_text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog_text span {
+    color: #f73e31;
+    font-size: 0.9rem;
+}
+
+.blog_text .blog_title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #191919;
+}
+
+.blog_text .blog_title:hover {
+    color: #f73e31;
+    transition: 0.2s;
+}
+
+.blog_text p {
+    color: #777;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.blog_text a {
+    color: #191919;
+}
+
+.blog_text a:hover {
+    color: #f80233;
+    transition: 0.5s;
+}
+
+
+/* ========================================================================= */
+
+
+/* ------------------------------Problam Page ------------------------------*/
+
+
+/* ========================================================================= */
+
+
+/* for problem,solution page */
+
+.head_polution {
+    background-color: #f7f6f6;
+    padding: 20px 50px;
+    font-size: 19px;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 30px;
+}
+
+.head_polution h1 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(234, 69, 69, 0.908);
+}
+
+.head_polution .post_cont {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.head_polution .img_post {
+    border-top: 1px solid #f80c0c;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.head_polution .img_post img {
+    height: 100%;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.polution_p {
+    color: #313030;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.polution_hed3 {
+    font-size: 25px;
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: underline;
+    color: #191919;
+    text-shadow: 1px 1px 1px rgba(213, 228, 173, 0.908);
+}
+
+
+/* ========================================================================= */
+
+
+/* ------------------------------Solution Page ------------------------------*/
+
+
+/* ========================================================================= */
+
+
+/* there is no need to add css for solution page i have re used problem page css code  */

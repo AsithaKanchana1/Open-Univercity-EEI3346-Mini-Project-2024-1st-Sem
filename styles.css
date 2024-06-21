@@ -1,0 +1,113 @@
+/* Set the font family for the entire body */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Style for the comment form */
+
+.comment-form {
+    margin-bottom: 20px;
+    /* Add space below the comment form */
+}
+
+
+/* Style for the text area input */
+
+textarea {
+    width: 100%;
+    /* Make the textarea full width */
+    height: 100px;
+    /* Set the height of the textarea */
+    resize: vertical;
+    /* Allow vertical resizing of the textarea */
+    margin-bottom: 10px;
+    /* Add space below the textarea */
+}
+
+
+/* Style for the button */
+
+button {
+    padding: 8px 16px;
+    /* Set padding for the button */
+    background-color: #4CAF50;
+    /* Set background color */
+    color: white;
+    /* Set text color */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Set cursor style */
+}
+
+
+/* Hover style for the button */
+
+button:hover {
+    background-color: #45a049;
+    /* Change background color on hover */
+}
+
+
+/* Style for the comments list */
+
+.comments-list {
+    border-top: 1px solid #ccc;
+    /* Add top border to separate comments */
+    padding-top: 20px;
+    /* Add space above the comments list */
+}
+
+
+/* Style for the heading of the comments list */
+
+.comments-list h2 {
+    margin-bottom: 10px;
+    /* Add space below the heading */
+}
+
+
+/* Style for the comment section background */
+
+.commentSec {
+    background-color: #4CAF50;
+    /* Set background color */
+}
+
+
+/* Hover style for the comment section background */
+
+.commentSec:hover {
+    color: #000;
+    /* Change text color on hover */
+}
+
+
+/* Style for the first comment form */
+
+.com_forem {
+    font-size: 30px;
+    /* Set font size */
+    text-align: center;
+    /* Center align text */
+    margin-bottom: 5%;
+    /* Add space below the comment form */
+    text-shadow: 2px 2px 4px #45a049;
+    /* Add text shadow with color */
+}
+
+
+/* Style for the second comment form */
+
+.com_forem2 {
+    font-size: 30px;
+    /* Set font size */
+    text-align: center;
+    /* Center align text */
+    margin-bottom: 5%;
+    /* Add space below the comment form */
+    text-shadow: 2px 2px 4px #14f420;
+    /* Add text shadow with color */
+}
