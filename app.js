@@ -9,7 +9,7 @@
  */
 
 new Vue({
-    el: '#app', // Targeting the element with id 'app' in the HTML
+    el: '#app', // Targeting the element with id 'app' in the HTML,
     data: {
         newComment: '', // Initializing a data property to store the new comment
         comments: [] // Initializing an empty array to store all comments
